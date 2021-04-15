@@ -1,0 +1,293 @@
+body {
+    background: url("../images/backgroundPhoto.jpg") no-repeat;
+    background-size: 100%;
+}
+
+#errors {
+    width: 100%;
+    color: red;
+}
+#successMessage{
+    width: 100%;
+    color: gold;
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+#userInfo {
+    width: 40%;
+    position: relative;
+    left: 10%;
+    float: left;
+}
+
+#additionalInfo {
+    width: 40%;
+    position: relative;
+    right: 10%;
+    float: right;
+}
+
+form {
+    text-align: center;
+    font-size: 24px;
+    color: #1aff29;
+    padding: 0;
+}
+
+.buttons {
+    font-size: 20px;
+    height: 40px;
+    width: 200px;
+}
+
+.textBox {
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+#nameLabel{
+    margin-top: 15px;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+#color {
+    width: 30px;
+    height: 30px;
+}
+
+#birthday {
+    font-size: 20px;
+}
+
+#file {
+    font-size: 20px;
+}
+
+#comment {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 150px;
+    width: 250px;
+    font-size: 20px;
+}
+
+/*puzzle_choosing's styles*/
+
+#puzzleChoosing label, select, input {
+    display: inline;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+select {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 20px;
+    width: 120px;
+    height: 30px;
+}
+
+#puzzlePhoto {
+    margin: 0 auto;
+    width: 35%;
+    height: 35%;
+}
+
+#photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/*show_puzzle's styles*/
+
+body {
+    font-size: 24px;
+    color: #1aff29;
+}
+
+#puzzle {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+#linksDiv {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 150px;
+}
+
+#othersFunctions {
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    width: 300px;
+    text-align: right;
+}
+
+#othersFunctions .buttons{
+    margin-bottom: 15px;
+}
+
+.links {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: #1aff29;
+}
+
+table {
+    border: 3px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, td {
+    padding: 0;
+    height: 85px;
+    width: 85px;
+}
+
+.white {
+    /*background-color: red;*/
+    background-color: #f1f1f1;
+}
+
+.black {
+    background-color: #85aa53;
+}
+
+.indexes8 {
+    position: absolute;
+    top: 65px;
+    left: 595px;
+    color: #85aa53;
+}
+
+.indexes7 {
+    position: absolute;
+    top: 150px;
+    left: 595px;
+    color: #f1f1f1;
+}
+
+.indexes6 {
+    position: absolute;
+    top: 240px;
+    left: 595px;
+    color: #85aa53;
+}
+
+.indexes5 {
+    position: absolute;
+    top: 330px;
+    left: 595px;
+    color: #f1f1f1;
+}
+
+.indexes4 {
+    position: absolute;
+    top: 420px;
+    left: 595px;
+    color: #85aa53;
+}
+
+.indexes3 {
+    position: absolute;
+    top: 512px;
+    left: 595px;
+    color: #f1f1f1;
+}
+
+.indexes2 {
+    position: absolute;
+    top: 605px;
+    left: 595px;
+    color: #85aa53;
+}
+
+.indexes1 {
+    position: absolute;
+    top: 695px;
+    left: 595px;
+    color: #f1f1f1;
+}
+
+.indexesA {
+    position: absolute;
+    top: 755px;
+    left: 655px;
+    color: #f1f1f1;
+}
+
+.indexesB {
+    position: absolute;
+    top: 755px;
+    left: 743px;
+    color: #85aa53;
+}
+
+.indexesC {
+    position: absolute;
+    top: 755px;
+    left: 825px;
+    color: #f1f1f1;
+}
+
+.indexesD {
+    position: absolute;
+    top: 755px;
+    left: 910px;
+    color: #85aa53;
+}
+
+.indexesE {
+    position: absolute;
+    top: 755px;
+    left: 1000px;
+    color: #f1f1f1;
+}
+
+.indexesF {
+    position: absolute;
+    top: 755px;
+    left: 1080px;
+    color: #85aa53;
+}
+
+.indexesG {
+    position: absolute;
+    top: 755px;
+    left: 1165px;
+    color: #f1f1f1;
+}
+
+.indexesH {
+    position: absolute;
+    top: 755px;
+    left: 1250px;
+    color: #85aa53;
+}
