@@ -64,3 +64,7 @@ Route::get('/732histogram', function () {
 Route::get('/27255histogram', function () {
     return view('27255histogram');
 })->name('27255histogram');
+
+Route::get('/test', function () {
+    return view('test');
+});
