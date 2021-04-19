@@ -13,3 +13,12 @@ require('./bootstrap');
  */
 
 require('./components/Example');
+
+require('./components/StartForm');
+
+require('./components/PuzzleChoosing');
+
+require('./components/731Puzzle');
+require('./components/732Puzzle');
+require('./components/27255Puzzle');
+require('./components/TimerButton');

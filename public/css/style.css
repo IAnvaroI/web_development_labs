@@ -1,0 +1,140 @@
+html {
+    font-size: 1.5rem;
+}
+
+body {
+    background: url("../images/backgroundPhoto.jpg") no-repeat;
+    background-size: 100%;
+}
+
+form {
+    /*color: #1aff29;*/
+    color: #ff050c;
+}
+
+table {
+    border: 3px solid white;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+tr, td {
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+}
+
+
+.numbers {
+    position: relative;
+    top: -10px;
+    left: -5px;
+}
+
+.letters {
+    position: relative;
+    bottom: -60px;
+    right: -73px;
+}
+
+#letterA {
+    position: relative;
+    bottom: -60px;
+    right: -58px;
+}
+
+.white {
+    background-color: #f1f1f1;
+    color:  #85aa53;
+}
+
+.black {
+    background-color: #85aa53;
+    color:  #f1f1f1;
+}
+
+.pawnW {
+    background-image: url("../images/pawnW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rookW {
+    background-image: url("../images/rookW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.knightW {
+    background-image: url("../images/knightW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bishopW {
+    background-image: url("../images/bishopW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.queenW {
+    background-image: url("../images/queenW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.kingW {
+    background-image: url("../images/kingW.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pawnB {
+    background-image: url("../images/pawnB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rookB {
+    background-image: url("../images/rookB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.knightB {
+    background-image: url("../images/knightB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bishopB {
+    background-image: url("../images/bishopB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.queenB {
+    background-image: url("../images/queenB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.kingB {
+    background-image: url("../images/kingB.png");
+    background-size: cover;
+    max-width: 100%;
+    max-height: 100%;
+}

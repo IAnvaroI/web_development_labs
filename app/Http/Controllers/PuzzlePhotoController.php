@@ -20,4 +20,22 @@ class PuzzlePhotoController extends Controller
             };
         }
     }
+    public function getIds(){
+        $puzzles = Puzzle::all();
+        $str = "<option selected disabled>Choose ID</option>";
+        foreach ($puzzles as $puzzle) {
+            $id = $puzzle->puzzleId;
+            $str .= "<option value=$id>$id</option>";
+        }
+        return $str;
+    }
+    public function getOriginLink(Request $request){
+        $puzzles = Puzzle::all();
+        $id = $request->input('id');
+        foreach ($puzzles as $puzzle) {
+            if($id == $puzzle->puzzleId){
+                return $puzzle->originLink;
+            };
+        }
+    }
 }

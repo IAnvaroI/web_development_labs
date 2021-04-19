@@ -37,6 +37,26 @@ Route::post(
 );
 
 Route::post(
+    '/getPuzzleIds',
+    [PuzzlePhotoController::class, 'getIds']
+);
+
+Route::post(
+    '/getOriginLink',
+    [PuzzlePhotoController::class, 'getOriginLink']
+);
+
+Route::post(
+    '/sessionSuccess', function () {
+    return json_encode(session('Success'));
+});
+
+Route::post(
+    '/sessionError', function () {
+    return json_encode(session('errors'));
+});
+
+Route::post(
     '/choose_puzzle_form/request',
     [AuthenticationUserController::class, 'create']
 )->name('choosePuzzleFormRequest');

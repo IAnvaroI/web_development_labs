@@ -23,9 +23,8 @@ class AuthenticationUserController extends Controller
             'name' => 'required|alpha',
             'surname' => 'required|alpha',
             'level' => 'required',
-            'pass' => 'size:8',
-            'comment' => 'min:10|max:12',
-//            'birthday' => 'between:15,300',
+            'pass' => 'max:10',
+            'comment' => 'max:300',
         ]);
 
         $user = AuthenticatedUser::where([
@@ -34,14 +33,13 @@ class AuthenticationUserController extends Controller
             'level' => $request->input('level'),
         ])->first();
         if ($user === NULL) {
-            $request->session()->put('name', $request->input('name'));
-            $request->session()->put('surname', $request->input('surname'));
-            $request->session()->put('level', $request->input('level'));
+            $arr = ["name" => $request->input('name'), "surname" =>$request->input('surname'), "level" =>$request->input('level')];
+            $request->session()->put('data', $arr);
+            $request->session()->put('Success', "You filled the form successfully!");
             $request->session()->save();
-            return redirect()->route('choice')->withSuccess('You filled the form successfully!');
+            return "http://web-dev-labs.loc/puzzle-choosing";
         } else {
-            $viewName = $user->puzzleId . "Puzzle";
-            return redirect()->route($viewName);
+            return "http://web-dev-labs.loc/" . $user->puzzleId;
         }
     }
 
@@ -62,7 +60,6 @@ class AuthenticationUserController extends Controller
 
         $user->save();
 //        echo $request->session()->get('name').$request->session()->get('surname').$request->session()->get('level');
-        $viewName = $user['puzzleId'] . "Puzzle";
-        return redirect()->route($viewName);
+        return "/" . $user['puzzleId'];
     }
 }
